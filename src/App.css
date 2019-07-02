@@ -1,33 +1,36 @@
-.App {
+.metronome {
+  font-family: 'Inconsolata', monospace;
   text-align: center;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.bpm-slider input[type=range] {
+  width: 100%;
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bpm-slider input[type=text] {
+  font-family: 'Inconsolata', monospace;
+  width: 10%;
+  font-size: 18px;
+  margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.metronome button {
+  font-family: 'Inconsolata', monospace;
+  background: #6bd8d8;
+  padding: 10px;
+  border: 1px solid #832420;
+  border-radius: 2px;
+  width: 100px;
+  color: rgb(14, 13, 13);
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.errorMessage {
+  padding: 10px;
+  font-size: 18px;
+  color: red;
 }
